@@ -7,7 +7,17 @@ export const AppContext = createContext();
 const AppProvider = ({ children }) => {
   const [themeMode, setThemeMode] = useState("lightTheme");
 
-  const value = { themeMode };
+  const toggleTheme = () => {
+    setThemeMode((prevState) => {
+      if (prevState === "lightTheme") {
+        return "darkTheme";
+      } else {
+        return "lightTheme";
+      }
+    });
+  };
+
+  const value = { themeMode, toggleTheme };
   const costumTheme = theme[themeMode];
 
   return (
