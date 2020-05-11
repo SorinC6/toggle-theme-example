@@ -1,7 +1,7 @@
 export default {
   lightTheme: {
     colors: {
-      background: "radial-gradient(lightGrey, black)",
+      background: "radial-gradient(grey, black)",
       black: "black",
       white: "white",
       blue: "#a0e9fd",
@@ -12,7 +12,7 @@ export default {
   },
   darkTheme: {
     colors: {
-      background: "radial-gradient(black, lightGrey)",
+      background: "radial-gradient(grey, white)",
       black: "white",
       white: "black",
       blue: "#a0e9fd",
